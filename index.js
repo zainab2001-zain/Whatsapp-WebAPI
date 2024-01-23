@@ -2,7 +2,7 @@
     const body_parser=require("body-parser");
     const axios=require("axios");
     require('dotenv').config();
-    const token=process.env.TOKEN;
+    const token=process.env.TOKEN; //this is the token we put in while configuring webhooks
     const mytoken=process.env.MYTOKEN;
     const app=express().use(body_parser.json());
     app.listen(8000||process.env.PORT,()=>{
